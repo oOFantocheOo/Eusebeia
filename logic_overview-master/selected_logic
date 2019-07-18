@@ -1,0 +1,34 @@
+
+double userWeight[];
+int drawer[];
+
+void setup() {
+  // first time use or initialize
+  recordWeight();//use APP to initialize user's weight
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  if(userDetected()){
+    //pressure sensors detect people
+    matchUser();//recognize user which allows an acceptable weight change
+    updateWeight();
+
+    drawerOpen();//whether or not the umbrella drawers open depents on weather
+    if(umbrellaNeeded && umbrellaInside)
+      unbrellaDrawerOpen();
+
+    if(umbrellaDetected()){
+      //pressure sensor inside the machine detects weight
+      while(waterDetected()){
+        fansOn();
+        if(!waterDetected())
+          break;
+      }
+      rotate();
+      servoOn();
+      updateDrawer();
+    }
+  }
+}

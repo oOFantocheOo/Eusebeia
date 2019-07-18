@@ -1,0 +1,18 @@
+{
+  "results": [{
+    "location": {
+      "id": "WT3Q0FW9ZJ3Q",
+      "name": "Wuhan",
+      "country": "CN",
+      "path": "Wuhan,Wuhan,Hubei,China",
+      "timezone": "Asia/Shanghai",
+      "timezone_offset": "+08:00"
+    },
+    "now": {
+      "text": "Cloudy",
+      "code": "4",
+      "temperature": "35"
+    },
+    "last_update": "2018-07-16T15:35:00+08:00"
+  }]
+}
